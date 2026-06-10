@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWE Smart Travel Hub - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>UWE Smart Travel Hub</h2
+            <p>Student & Staff Portal</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">University Email</label>
+                    <input type="email" id="email" placeholder="e.g. name@uwe.ac.uk" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                
+                <div id="errorMessage" class="error-text"></div>
+                
+                <button type="submit" class="btn-primary">Secure Login</button>
+            </form>
+            <p class="note">Only @uwe.ac.uk domains are allowed for security purposes.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

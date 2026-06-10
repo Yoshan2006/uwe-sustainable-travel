@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWE Smart Travel Hub</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+<div class="mobile-app">
+    
+    <div class="app-header">
+        <button class="back-btn" id="backBtn" style="visibility: hidden;" onclick="goHome()">◀ Back</button>
+        <h3 style="margin: 0; font-size: 18px;">UWE Travel Hub</h3>
+        <div class="profile-icon" onclick="showScreen('screen5')">👤</div>
+    </div>
+
+    <div id="screen2" class="app-screen active-screen" style="padding: 10px; position: relative;">
+        <div id="realMap"></div>
+        
+        <div id="topDestBanner" class="destination-banner">
+            <p>📍 Navigating To</p>
+            <h3 id="topDestName">...</h3>
+        </div>
+
+        <div class="floating-search" onclick="showScreen('screen3')">
+            📍 Where are you going?
+        </div>
+    </div>
+
+    <div id="screen3" class="app-screen">
+        <h2>Plan Journey</h2>
+        <p style="font-size: 12px; color: green;" id="locationStatus">🛰 Locating your GPS position...</p>
+        <input type="text" class="input-field" id="currentLocationInput" value="Fetching your location..." disabled>
+        
+        <input list="popular-destinations" class="input-field" id="destination" placeholder="Enter Destination or Postcode (e.g., BS16 1QY)">
+        <datalist id="popular-destinations">
+            <option value="UWE Frenchay Campus (BS16 1QY)">
+            <option value="UWE Glenside Campus (BS16 1DD)">
+            <option value="Bristol City Centre">
+            <option value="Cabot Circus, Bristol">
+            <option value="Bristol Temple Meads">
+        </datalist>
+        
+        <button class="btn-main" id="searchBtn" onclick="getRecommendations()" disabled>Find Smartest Route</button>
+    </div>
+
+    <div id="screen4" class="app-screen">
+        <h3 style="margin-top:0;">Recommendations</h3>
+        <div id="weatherBanner" class="weather-banner">⏳ Checking live weather & traffic...</div>
+        <div id="recommendationList"></div>
+    </div>
+
+    <div id="screen5" class="app-screen" style="text-align: center;">
+        <h2>My Green Points</h2>
+        <h1 style="font-size: 60px; color: #28a745; margin: 20px 0;">120</h1>
+        <p>Keep using sustainable transport to earn more!</p>
+        <button class="btn-main" style="background: #17a2b8; margin-top: 20px;" onclick="showToast('Coffee voucher sent to your student email!', 'success')">Redeem for Free Coffee ☕</button>
+    </div>
+
+</div>
+
+<div id="toastContainer" class="toast-container"></div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

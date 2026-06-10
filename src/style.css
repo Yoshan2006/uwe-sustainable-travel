@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.login-box p {
+    color: #777;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #e3000f; /* UWE Red color vibe */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #b3000b;
+}
+
+.error-text {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Mobile App Layout */
+body { background-color: #e9ecef; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: 'Segoe UI', sans-serif;}
+
+.mobile-app {
+    width: 375px; /* iPhone screen width */
+    height: 812px; /* iPhone screen height */
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* App Header */
+.app-header {
+    background: #e3000f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-icon { font-size: 24px; cursor: pointer; }
+
+/* Screens */
+.app-screen { display: none; flex: 1; padding: 20px; overflow-y: auto; background: #f8f9fa; }
+.active-screen { display: block; }
+
+/* Screen 2: Home Map */
+.map-bg {
+    background: url('https://static.vecteezy.com/system/resources/previews/000/153/588/original/vector-roadmap-location-map.jpg') center/cover;
+    height: 100%;
+    border-radius: 15px;
+    position: relative;
+}
+.floating-search {
+    position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+    width: 90%; background: white; padding: 15px; border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; color: #555; cursor: pointer;
+    font-weight: bold;
+}
+
+/* Screen 4: Recommendations */
+.weather-banner { background: #d1ecf1; color: #0c5460; padding: 15px; border-radius: 10px; margin-bottom: 20px; font-weight: bold; border-left: 5px solid #17a2b8;}
+.rec-card { background: white; padding: 15px; border-radius: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: flex; justify-content: space-between; border: 1px solid #eee;}
+.rec-card.top-choice { border: 2px solid #28a745; background: #f0fff4; }
+.rec-card.warning { opacity: 0.6; }
+.card-details h4 { margin: 0 0 5px 0; font-size: 16px; }
+.card-details p { margin: 2px 0; font-size: 13px; color: #555; }
+.green-points-tag { color: #28a745; font-weight: bold; font-size: 12px; }
+
+/* General Buttons & Inputs */
+.input-field { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 10px; font-size: 16px;}
+.btn-main { width: 100%; padding: 15px; background: #e3000f; color: white; border: none; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer;}
+.back-btn { background: none; border: none; color: white; font-size: 16px; cursor: pointer; }
+
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #e9ecef; display: flex; justify-content: center; align-items: center; height: 100vh; }
+
+.login-container { width: 100%; max-width: 400px; padding: 20px; }
+.login-box { background: #ffffff; padding: 40px 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; }
+.login-box h2 { color: #333; margin-bottom: 5px; }
+.login-box p { color: #777; margin-bottom: 25px; font-size: 14px; }
+.input-group { margin-bottom: 20px; text-align: left; }
+.input-group label { display: block; margin-bottom: 8px; color: #555; font-weight: bold; font-size: 14px; }
+.input-group input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; }
+.btn-primary { width: 100%; padding: 12px; background-color: #e3000f; color: white; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s; }
+.btn-primary:hover { background-color: #b3000b; }
+.error-text { color: red; font-size: 13px; margin-bottom: 15px; display: none; }
+.note { margin-top: 20px; font-size: 12px; color: #888; }
+
+.mobile-app { width: 375px; height: 812px; background: #fff; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow: hidden; position: relative; display: flex; flex-direction: column; }
+.app-header { background: #e3000f; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+.profile-icon { font-size: 24px; cursor: pointer; }
+.app-screen { display: none; flex: 1; padding: 20px; overflow-y: auto; background: #f8f9fa; }
+.active-screen { display: block; }
+
+#realMap { height: 100%; width: 100%; border-radius: 15px; z-index: 1; }
+.floating-search { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 90%; background: white; padding: 15px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); text-align: center; color: #555; cursor: pointer; font-weight: bold; z-index: 1000; transition: all 0.3s ease; }
+
+/* --- අලුත්: Top Destination Banner --- */
+.destination-banner { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(15px); padding: 15px 20px; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); z-index: 1000; text-align: center; display: none; width: 85%; border: 1px solid rgba(255,255,255,0.5); }
+.destination-banner p { margin: 0; font-size: 11px; color: #e3000f; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 800; }
+.destination-banner h3 { margin: 5px 0 0 0; font-size: 15px; color: #222; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+/* --- අලුත්: Modern Toast Notifications --- */
+.toast-container { position: fixed; top: 30px; left: 50%; transform: translateX(-50%); z-index: 9999; display: flex; flex-direction: column; gap: 10px; pointer-events: none; width: 90%; max-width: 350px; }
+.toast { background: rgba(30, 30, 30, 0.95); color: white; padding: 15px 20px; border-radius: 12px; font-size: 14px; font-weight: 500; box-shadow: 0 10px 30px rgba(0,0,0,0.2); animation: slideDown 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; backdrop-filter: blur(10px); display: flex; align-items: center; gap: 10px; border-left: 4px solid #28a745; }
+.toast.error { border-left-color: #e3000f; }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeOut { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(-20px); } }
+
+.weather-banner { background: #d1ecf1; color: #0c5460; padding: 15px; border-radius: 10px; margin-bottom: 20px; font-weight: bold; border-left: 5px solid #17a2b8;}
+.rec-card { background: white; padding: 15px; border-radius: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: flex; justify-content: space-between; border: 1px solid #eee; cursor: pointer; transition: transform 0.1s;}
+.rec-card:active { transform: scale(0.98); }
+.rec-card.top-choice { border: 2px solid #28a745; background: #f0fff4; }
+.rec-card.warning { opacity: 0.6; }
+.card-details h4 { margin: 0 0 5px 0; font-size: 16px; }
+.card-details p { margin: 2px 0; font-size: 13px; color: #555; }
+.green-points-tag { color: #28a745; font-weight: bold; font-size: 12px; display: inline-block; margin-top: 5px; }
+
+.input-field { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 10px; font-size: 16px;}
+.btn-main { width: 100%; padding: 15px; background: #e3000f; color: white; border: none; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer;}
+.back-btn { background: none; border: none; color: white; font-size: 16px; cursor: pointer; }
